@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="./assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.122.0" />
+    <title>Navbar Template · Bootstrap v5.3</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/navbars/"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+    />
+
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
+      /* CSS for background image */
+      .custom-bg {
+        background-image: url('./assets/background/BG\ Black01.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* CSS for white text */
+      .white-text {
+        color: #d3d3d3; /* Putih */
+      }
+
+      /* CSS for red text */
+      .red-text {
+        color: #9a3838; /* Merah */
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="navbars.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary rounded"
+      aria-label="Thirteenth navbar example"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample11"
+          aria-controls="navbarsExample11"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <a class="navbar-brand col-lg-3 me-0" href="#"
+            ><img
+              alt="Logo"
+              fetchpriority="high"
+              width="30"
+              height="30"
+              decoding="async"
+              data-nimg="1"
+              class="h-11 w-auto"
+              style="color: transparent"
+              src="https://client-cdn.bangjeff.com/232b709e-0612-426b-83f2-7ea6f36dbed3.png"
+            />
+          </a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cek Transaksi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kalkulator</a>
+            </li>
+          </ul>
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+            <form role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >ID</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Masuk</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-danger me-2">Daftar</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Your added section with custom background -->
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center custom-bg">
+      <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <h1 class="display-3 fw-bold white-text">Top.Up Diamond Aneka Game</h1>
+        <h3 class="fw-normal text-muted mb-3 white-text">segera dapatkan promonya</h3>
+        <div class="d-flex gap-3 justify-content-center lead fw-normal">
+          <a class="icon-link red-text" href="#">
+            Learn more
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+          <a class="icon-link red-text" href="#">
+            Buy
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    <!-- Added game section 01 -->
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <h1 class="mb-3 text-lg font-semibold uppercase leading-relaxed tracking-wider text-text-color" style="font-size: 1.5rem;">🔥 POPULER</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://c4.wallpaperflare.com/wallpaper/925/204/857/valorant-jett-valorant-phoenix-valorant-riot-games-hd-wallpaper-preview.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Valorant adalah permainan video POP taktis multipemain gratis yang dikembangkan dan diterbitkan oleh Riot Games, untuk Microsoft Windows.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Cek Promo</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                  </div>
+                  <small class="text-body-secondary">18 hours</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Added game section 02 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://assets.ggwp.id/2023/05/Istilah-MLBB-640x360.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Mobile Legends: Bang Bang adalah permainan video seluler ber-genre multiplayer online battle arena yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan dari ByteDance.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Cek Promo</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                  </div>
+                  <small class="text-body-secondary">23 hours</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Added game section 03 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://wallpapers.com/images/featured/genshin-impact-wlq3ykrxbaoadjow.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Genshin Impact menceritakan kisah petualangan karakter utama pemainnya, yaitu Lumine dan Aether, setelah dihadang oleh Unkown God yang motifnya masih misterius.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Cek Promo</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                  </div>
+                  <small class="text-body-secondary">49 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Added game section 04 -->
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://media.suara.com/pictures/653x366/2019/09/20/22105-pubg-mobile.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">PUBG Mobile adalah sebuah permainan video battle royale gratis dimainkan yang dikembangkan oleh LightSpeed dan Quantum Studio, sebuah divisi dari Tencent Games.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Cek Promo</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                  </div>
+                  <small class="text-body-secondary">28 hours</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Added game section 05 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://i.pinimg.com/564x/70/a0/20/70a020d66fd5cdc0cc7acadd98de5e5f.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Garena Free Fire atau biasa disebut Free Fire adalah permainan battle royale yang dikembangkan oleh 111 Dots Studio dan diterbitkan oleh Garena untuk Android dan iOS.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Cek Promo</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                  </div>
+                  <small class="text-body-secondary">54 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Added game section 06 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://4kwallpapers.com/images/walls/thumbs_3t/778.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Call of Duty adalah permainan perang tembak-menembak orang pertama yang dikembangkan oleh Infinity Ward dan dipublikasikan oleh Activision pada tanggal 29 Oktober 2003 untuk PC.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Cek Promo</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                  </div>
+                  <small class="text-body-secondary">3 days</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">CONTACT</h2>
+    
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+          <div class="col d-flex flex-column align-items-start gap-2">
+            <h2 class="fw-bold text-body-emphasis">Silahkan Hubungi Kami</h2>
+            <p class="text-body-secondary">Kami senang mendengar dari Anda! Silakan hubungi kami jika Anda memiliki pertanyaan, umpan balik, atau permintaan khusus. Tim kami siap membantu Anda dengan segala yang Anda butuhkan.</p>
+            <a href="#" class="btn btn-primary btn-lg">About Us</a>
+          </div>
+    
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#collection"></use>
+                  </svg>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Instagram</h4>
+                <a href="https://www.instagram.com/zamoranime?igsh=NTc4MTIwNjQ2YQ==">Klik disini</a>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#gear-fill"></use>
+                  </svg>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">WhatsApp</h4>
+                <a href="https://wa.me/+6281311113941">08xxxxxx</a>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#speedometer"></use>
+                  </svg>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Email</h4>
+                <a href="mailto:muh.hasbi.abi97@gmail.com">Klik disini</a>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#table"></use>
+                  </svg>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Telegram</h4>
+                <a href="https://telegram.me/+6281311113941">08xxxxxx</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
