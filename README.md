@@ -1,1 +1,3 @@
 # tugasp7
+NIM   : 211110051
+NAMA  : MUH. HASBI ASSHIDDIQ
